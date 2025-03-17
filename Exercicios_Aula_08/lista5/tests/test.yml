@@ -1,0 +1,114 @@
+"Exercício 1":
+  command: "./bin/ex1.out"
+  stdin: [["ola"], ["oh o aue ai oh"], ["racecar"]]
+  stdout: ["alo", "ho ia eua o ho", "racecar"]
+  prompts: ["(.*):"]
+  weight: 1
+  hints: ['', '', '']
+
+"Exercício 2":
+  command: "./bin/ex2.out"
+  stdin: [["ola"], ["oh o aue ai oh"], ["racecar"], ["RaceCar"]]
+  stdout: ["Não é", "Não é", "É", "É"]
+  prompts: ["(.*):"]
+  weight: 1
+  hints: ['', '', '', 'Lembre-se de desconsiderar maiúsculas.']
+
+"Exercício 3":
+  command: "./bin/ex3.out"
+  stdin: [
+    ["Ola, Mundo!", "M"],
+    ["Ola, Mundo!", "!"],
+    ["Ola, Mundo!", "b"],
+    ["Ola, Mundo!", "m"]
+  ]
+  stdout: ["5", "10", "não", "5"]
+  prompts: ["(.*):","(.*):"]
+  weight: 1
+  hints: ['', '', '', 'Lembre-se de desconsiderar maiúsculas.']
+
+"Exercício 4":
+  command: "./bin/ex4.out"
+  stdin: [["polar"], ["ZeNit"], ["seu ou, e ratataci!"], ["tocobi"]]
+  stdout: ["zenit", "polar", "sou eu, o tiririca!", "receba"]
+  prompts: ["(.*):"]
+  weight: 1
+  hints: ['', '', '', '']
+
+"Exercício 5":
+  command: "./bin/ex5.out"
+  stdin: [["polar"], ["ZeNit"], ["racecar"], ["alo"]]
+  stdout: ["alopr", "eintz", "aaccerr", "alo"]
+  prompts: ["(.*):"]
+  weight: 1
+  hints: ['', '', '', '']
+
+"Exercício 6":
+  command: "./bin/ex6.out"
+  stdin: [["bored", "roBed"], ["bored", "roBbed"], ["oii", "ooi"], ["alo", "ola"]]
+  stdout: ["bored é", "bored não é", "oii não é", "alo é"]
+  prompts: ["(.*):", "(.*):"]
+  weight: 1
+  hints: ['', '', '', '']
+
+"Exercício 7":
+  command: "./bin/ex7.out"
+  stdin: [
+    ["Matheus,Ana Julia,Marco Antonio,Joao,Victoria"], 
+    ["Julio,Tiririca,Diego,Alexandre,Nicola"]
+  ]
+  stdout: [
+    "['Matheus', 'Ana Julia', 'Marco Antonio', 'Joao', 'Victoria']",
+    "['Julio', 'Tiririca', 'Diego', 'Alexandre', 'Nicola']",
+  ]
+  prompts: ["(.*):"]
+  weight: 1
+  hints: ['', '', '', '']
+
+"Exercício 8":
+  command: "./bin/ex8.out"
+  stdin: [
+    ["Matheus,Ana Julia,Marco Antonio,Joao,Victoria"], 
+    ["Julio,Tiririca,Diego,Alexandre,Nicola"]
+  ]
+  stdout: [
+    "['ana julia', 'joao', 'marco antonio', 'matheus', 'victoria']",
+    "['alexandre', 'diego', 'julio', 'nicola', 'tiririca']",
+  ]
+  prompts: ["(.*):"]
+  weight: 1
+  hints: ['', '', '', '']
+
+"Exercício 9":
+  command: "./bin/ex9.out"
+  stdin: [
+    ["Oi, eu sou o Goku!", "0,9"], 
+    ["0123456789", "3,7"],
+    ["Estruturas de Dados", "3,12"],
+  ]
+  stdout: [
+    "Oi, eu sou",
+    "34567",
+    "ruturas de",
+  ]
+  prompts: ["(.*):", "(.*):"]
+  weight: 1
+  hints: ['', '', '', '']
+
+"Exercício 10":
+  command: "./bin/ex10.out"
+  stdin: [
+    ["tiririca"], 
+    ["I have a racecar"],
+    ["Cuidado com o Diego"],
+    ["Alexandre"],
+  ]
+  stdout: [
+    "iriri",
+    "racecar",
+    "dad",
+    "Não existe",
+  ]
+  prompts: ["(.*):"]
+  weight: 1
+  hints: ['', '', '', '']

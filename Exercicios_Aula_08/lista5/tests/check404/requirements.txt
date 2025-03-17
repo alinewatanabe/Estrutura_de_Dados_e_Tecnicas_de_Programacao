@@ -1,0 +1,5 @@
+pyyaml
+pexpect
+wexpect==2.3.2
+coloredlogs
+verboselogs

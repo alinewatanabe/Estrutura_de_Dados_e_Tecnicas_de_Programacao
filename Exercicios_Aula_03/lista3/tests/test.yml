@@ -1,0 +1,99 @@
+"Calculadora - Soma":
+  command: "./dll/calculadora.so"
+  function: c_float soma c_float,c_float
+  stdin: [[2.0,3.0]]
+  stdout: [5.0]
+  prompts: []
+  weight: 1
+  hints: ['']
+
+"Calculadora - Subtracao":
+  command: "./dll/calculadora.so"
+  function: c_float subtracao c_float,c_float
+  stdin: [[2.0,3.0], [-5, 10]]
+  stdout: [-1.0, -15.0]
+  prompts: []
+  weight: 1
+  hints: ['', '']
+
+"Calculadora - Divisao":
+  command: "./dll/calculadora.so"
+  function: c_float divisao c_float,c_float
+  stdin: [[1.0,4.0], [0, 0]]
+  stdout: [0.25, .inf]
+  prompts: []
+  weight: 2
+  hints: ['', '']
+
+"Calculadora - Multiplicacao":
+  command: "./dll/calculadora.so"
+  function: c_float multiplicacao c_float,c_float
+  stdin: [[1.0,4.0], [0, 0]]
+  stdout: [4.00, 0.0]
+  prompts: []
+  weight: 1
+  hints: ['', '']
+
+"Calculadora - Cosseno":
+  command: "./dll/calculadora.so"
+  function: c_float cosseno c_float
+  stdin: [[90], [60]]
+  stdout: [6.123234262925839e-17, 0.50]
+  prompts: []
+  weight: 1
+  hints: ['', '']
+
+"Calculadora - Seno":
+  command: "./dll/calculadora.so"
+  function: c_float seno c_float
+  stdin: [[90],[60]]
+  stdout: [1.00, 0.8660253882408142]
+  prompts: []
+  weight: 1
+  hints: ['', '']
+
+"Calculadora - Potencia":
+  command: "./dll/calculadora.so"
+  function: c_float potencia_n c_float,c_float
+  stdin: [[1.0, 0], [2, 2]]
+  stdout: [1, 4]
+  prompts: []
+  weight: 1
+  hints: ['', '']
+
+"Calculadora - Raiz":
+  command: "./dll/calculadora.so"
+  function: c_float raiz_n c_float,c_float
+  stdin: [[0, 0], [4, 2]]
+  stdout: [0, 2.0]
+  prompts: []
+  weight: 1
+  hints: ['', '']
+
+"Calculadora - Menu":
+  command: "./bin/calculadora.out"
+  stdin: [['1', '1+2'],
+          ['2', '4-5'],
+          ['3', '4*23'],
+          ['4', '5/0'],
+          ['5', '4r2'],
+          ['6', '5^2'],
+          ['7', '90'],
+          ['8', '90'],
+          ['-1'],
+          ['10']
+  ]
+  stdout: ['1.00 + 2.00 = 3.00',
+           '4.00 - 5.00 = -1.00',
+           '4.00 * 23.00 = 92.00',
+           '5.00 / 0.00 = inf',
+           '4.00 r 2.00 = 2.00',
+           '5.00 ^ 2.00 = 25.00',
+           'seno(90.00) = 1.00',
+           'cosseno(90.00) = 0.00',
+           'Saindo...',
+           'Digite uma opção válida!'
+  ]
+  prompts: ["(.*):", "(.*):"]
+  weight: 4
+  hints: ['', '', '', '','','','','','', '']

@@ -1,0 +1,128 @@
+"Exercício 1":
+  command: "./bin/ex1.out"
+  stdin: [["1 2 3 4 5 6 -100"]]
+  stdout: ["[1, 2, 3, 4, 5, 6]"]
+  prompts: ["(.*):"]
+  weight: 1
+  hints: ['']
+
+"Exercício 2 - calcula_media":
+  command: "./dll/ex2.so"
+  function: c_float calcula_media *c_int,c_int
+  stdin: [
+    [[1, 1, 1, 1, 1, 1, 1], 7],
+    [[1, 2, 3, 4, 5, 6, 7, 8, 9, 10], 10]
+  ]
+  stdout: [1.0, 5.5]
+  prompts: []
+  weight: 1
+  hints: ['', '']
+
+"Exercício 2 - calcula_dvp":
+  command: "./dll/ex2.so"
+  function: c_float calcula_dvp *c_int,c_int
+  stdin: [
+    [[1, 1, 1, 1, 1, 1, 1], 7],
+    [[1, 2, 3, 4, 5, 6, 7, 8, 9, 10], 10]
+  ]
+  stdout: [0.0, ~2.9]
+  prompts: []
+  weight: 1
+  hints: ['', '']
+
+"Exercício 2 - Programa principal":
+  command: "./bin/ex2.out"
+  stdin: [
+    ["1 1 1 1 1 1 1 -100"],
+    ["1 2 3 4 5 6 7 8 9 10 -100"]
+  ]
+  stdout: [
+    "1.00 +- 0.0",
+    "5.50 +- 2.9"
+  ]
+  prompts: ["(.*):"]
+  weight: 1
+  hints: ['', '']
+
+"Exercício 3 - produto_escalar":
+  command: "./dll/ex3.so"
+  function: c_int produto_escalar *c_int,*c_int
+  stdin: [
+    [[1, 2, 3], [3, 2, 1]],
+    [[10, 20, 30], [-10, 2, 5]]
+  ]
+  stdout: [10, 90]
+  weight: 1
+  hints: ['', '']
+
+"Exercício 3 - Programa principal":
+  command: "./bin/ex3.out"
+  stdin: [
+    ["1 2 3",
+    "3 2 1"]
+  ]
+  stdout: [
+    "[1, 2, 3] . [3, 2, 1] = 10"
+  ]
+  prompts: ["(.*):", "(.*):"]
+  weight: 1
+  hints: ['']
+
+"Exercício 4":
+  command: "./bin/ex4.out"
+  stdin: [
+    ["1 1 1 1 1 1 1 -100\n1 2 3 -100"],
+    ["1 2 3 -100\n3 2 1 -100\n-100"]
+  ]
+  stdout: [
+    "Número de colunas incompatível. Saindo...",
+    "[[1, 2, 3],[3, 2, 1]]"
+  ]
+  prompts: ["(.*):"]
+  weight: 1
+  hints: ['', '']
+
+"Exercício 5":
+  command: "./bin/ex5.out"
+  stdin: [
+    ["2 3 4", "1 3 4", "5 6 7"],
+    ["1 0 0", "0 1 0", "0 0 1"]
+  ]
+  stdout: [
+    "-3",
+    "1"
+  ]
+  prompts: ["(.*):", "(.*):", "(.*):"]
+  weight: 1
+  hints: ['', '']
+
+"Exercício 6":
+  command: "./bin/ex6.out"
+  stdin: [
+    ["1 2 3", "4 5 6", "7 8 9"],
+    ["1 0 0", "0 1 0", "0 0 1"]
+  ]
+  stdout: [
+    "[[1, 4, 7],[2, 5, 8],[3, 6, 9]]",
+    "[[1, 0, 0],[0, 1, 0],[0, 0, 1]]"
+  ]
+  prompts: ["(.*):", "(.*):", "(.*):"]
+  weight: 1
+  hints: ['', '']
+
+"Exercício 7":
+  command: "./bin/ex7.out"
+  stdin: [
+    ["1 0 0", "0 1 0", "0 0 1", "1 1 1", "2 2 2", "3 3 3"],
+    ["2 0 0", "0 2 0", "0 0 2", "1 1 1", "2 2 2", "3 3 3"],
+    ["1 2 3", "4 5 6", "7 8 9", "1 1 1", "2 2 2", "3 3 3"]
+  ]
+  stdout: [
+    "[[1, 1, 1],[2, 2, 2],[3, 3, 3]]",
+    "[[2, 2, 2],[4, 4, 4],[6, 6, 6]]",
+    "[[14, 14, 14],[32, 32, 32],[50, 50, 50]]"
+
+  ]
+  prompts: ["(.*):", "(.*):", "(.*):", "(.*):", "(.*):", "(.*):"]
+  weight: 1
+  hints: ['', '', '']
