@@ -1,0 +1,64 @@
+"Exercicio 1":
+  command: "./bin/ex1.out"
+  stdin: [None]
+  stdout: ["Ola, mundo!"]
+  prompts: []
+  weight: 1
+  hints: ['']
+
+"Exercicio 2": 
+  command: "./bin/ex2.out"
+  stdin: [['2'], ['4'], ['5']]
+  stdout: ['2', '4', '5']
+  prompts: ["Digite um numero: "]
+  weight: 1
+  hints: ['','','']
+
+"Exercicio 3": 
+  command: "./bin/ex3.out"
+  stdin: [['2'], ['4'], ['5']]
+  stdout: ['2.000000 2.00', '4.000000 4.00', '5.000000 5.00']
+  prompts: ["Digite um numero: "]
+  weight: 1
+  hints: ['','','']
+
+"Exercicio 4": 
+  command: "./bin/ex4.out"
+  stdin: [['2', '3'], ['4', '5'], ['5', '7']]
+  stdout: ['3 2', '5 4', '7 5']
+  prompts: ["Digite um numero: ", "Digite um numero: "]
+  weight: 1
+  hints: ['','','']
+
+"Exercicio 5": 
+  command: "./bin/ex5.out"
+  stdin: [['54321'], ['38271'], ['98401']]
+  stdout: ['12345', '17283', '10489']
+  prompts: ["Digite um numero: "]
+  weight: 2
+  hints: ['','','']
+
+"Exercicio 6": 
+  command: "./bin/ex6.out"
+  stdin: [['3', '3'], ['5', '12'], ['324', '532']]
+  stdout: ['S: 6 P: 1.50', 'S: 17 P: 3.53', 'S: 856 P: 201.36']
+  prompts: ["R1: ", "R2: "]
+  weight: 2
+  hints: ['','','']
+
+"Exercicio 7": 
+  command: "./bin/ex7.out"
+  stdin: [["60"], ["85"], ["171"]]
+  stdout: ['N50: 1 N10: 1 N2: 0 T: 0', 'N50: 1 N10: 3 N2: 2 T: 1', 'N50: 3 N10: 2 N2: 0 T: 1']
+  prompts: ["Total: "]
+  weight: 2
+  hints: ['','','']
+
+"Exercicio 8": 
+  command: "./bin/ex8.out"
+  stdin: [['123456'], ['234923'], ['937129']]
+  stdout: ['000011', '000100', '101001']
+  prompts: ["Digite um numero: "]
+  weight: 2
+  hints: ['','','']
+
