@@ -1,0 +1,81 @@
+"Exercicio 1":
+  command: "./bin/ex1.out"
+  stdin: [['2', '5'], ['5', '5'], ['50.0', '5']]
+  stdout: ['5.00 > 2.00', 'Numeros iguais!', '50.00 > 5.00']
+  prompts: ["(.*):", "(.*):"]
+  weight: 1
+  hints: ['', 'O programa deve verificar se os numeros sao iguais!', '']
+
+"Exercicio 2":
+  command: "./bin/ex2.out"
+  stdin: [['5'], ['4']]
+  stdout: [ 'Impar', 'Par']
+  prompts: ["(.*):"]
+  weight: 1
+  hints: ['', '']
+ 
+"Exercicio 3":
+  command: "./bin/ex3.out"
+  stdin: [['7'], ['12'], ['1']]
+  stdout: ['1 7 ', '1 2 3 4 6 12 ', '1 ']
+  prompts: ["(.*):"]
+  weight: 1 
+  hints: ['', '', '']
+  
+"Exercicio 4":
+  command: "./bin/ex4.out"
+  stdin: [['5.0, 10.0'], ['-1, 10'], ['0, 10'], ['12, 0']]
+  stdout: ['7.5', 'Nota invalida. Deve ser entre 0.0 e 10.0', '5.0', 'Nota invalida. Deve ser entre 0.0 e 10.0']
+  prompts: ["(.*):"]
+  weight: 1
+  hints: ['', '', '', '']
+  
+"Exercicio 5":
+  command: "./bin/ex5.out"
+  stdin: [['22/02/2022'], 
+    ['29/02/2020'],
+    ['29/02/2022'], 
+    ['32/01/2019'], 
+    ['15/15/2021'],
+    ['31/06/2022']
+  ]
+  stdout: ['Data valida!', 
+    'Data valida!', 
+    'Data invalida!', 
+    'Data invalida!',
+    'Data invalida!',
+    'Data invalida!'
+  ]
+  prompts: ["(.*):"]
+  weight: 1
+  hints: ['', '', '', '', '', '']
+
+"Exercicio 6":
+  command: "./bin/ex6.out"
+  stdin: [['5'], 
+    ['-5'],
+    ['6'], 
+    ['14'], 
+  ]
+  stdout: ['Digite um numero par!', 
+    'Digite um numero positivo!', 
+    '0 2 4 6 ', 
+    '0 2 4 6 8 10 12 14 ',
+  ]
+  prompts: ["(.*):"]
+  weight: 1
+  hints: ['', '', '', '']
+
+"Exercicio 7":
+  command: "./bin/ex7.out"
+  stdin: [['10'], 
+    ['-5'],
+    ['15'], 
+  ]
+  stdout: ['2.93', 
+    'Erro, n menor que 0!', 
+    '3.32', 
+  ]
+  prompts: ["(.*):"]
+  weight: 1
+  hints: ['', '', '']
