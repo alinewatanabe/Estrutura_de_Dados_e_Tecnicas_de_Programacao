@@ -1,0 +1,105 @@
+"Ex1 - Leitura do Vetor":
+  command: "./bin/ex1.out"
+  stdin: [
+    ["1 2 3 4 5 6 7 8 9 10 -100", "-1"],
+    ["333 200 13 -100", "-1"],
+         ]
+  prompts: ["(.*):", "(.*):"]
+  stdout: [
+    '[1, 2, 3, 4, 5, 6, 7, 8, 9, 10]',
+    '[333, 200, 13]'
+          ]
+  weight: 1
+  hints: ['', '']
+
+"Ex1 - Função Busca Linear":
+  command: "./dll/ex1.so"
+  function: c_int busca_linear *c_int,c_int,c_int
+  stdin: [
+    [ [1,2,3,4,5,6,7,8,9,10], 10, 7 ],
+    [ [1,2,3,4,5,6,7,8,9,10], 10, 15 ],
+    [ [4, 5, 333, 200, -150], 5, -150 ],
+         ]
+  stdout: [6, -1, 4]
+  weight: 1
+  hints: ['', '', '']
+
+"Ex1 - Conjunto da Obra":
+  command: "./bin/ex1.out"
+  stdin: [
+    ["1 2 3 4 5 6 7 8 9 10 -100", "4"],
+    ["333 200 13 -100", "13"],
+         ]
+  prompts: ["(.*):", "(.*):"]
+  stdout: [
+    '[1, 2, 3, 4, 5, 6, 7, 8, 9, 10]Chave 4 encontrada na posição 3.',
+    '[333, 200, 13]Chave 13 encontrada na posição 2.'
+          ]
+  weight: 2
+  hints: ['', '']
+
+"Ex2 - Leitura da Matriz":
+  command: "./bin/ex2.out"
+  stdin: [
+    ["1 2 3 4 5 6", "7 8 9 10 11 12", "13 14 15 16 17 18", "-1"],
+    ["22 33 44 55 66 77", "11 33 55 01 27 137", "13 14 15 16 17 18", "-1"],
+         ]
+  prompts: ["(.*):", "(.*):", "(.*):", "(.*):"]
+  stdout: [
+    '[[1, 2, 3, 4, 5, 6],[7, 8, 9, 10, 11, 12],[13, 14, 15, 16, 17, 18]]',
+    '[[22, 33, 44, 55, 66, 77],[11, 33, 55, 1, 27, 137],[13, 14, 15, 16, 17, 18]]',
+          ]
+  weight: 1
+  hints: ['', '']
+
+"Ex2 - Função Busca Linear":
+  command: "./dll/ex2.so"
+  function: c_int busca_linear *c_int,c_int
+  stdin: [
+    [ [1,2,3,4,5,6], 6 ],
+    [ [1,2,3,4,5,6], 15 ],
+    [ [4, 5, 333, 200, 467, -150], 333 ],
+         ]
+  stdout: [5, -1, 2]
+  weight: 1
+  hints: ['', '', '']
+
+"Ex2 - Função Busca Binária":
+  command: "./dll/ex2.so"
+  function: c_int busca_binaria *c_int,c_int
+  stdin: [
+    [ [1,2,3,4,5,6], 6 ],
+    [ [1,2,3,4,5,6], 15 ],
+    [ [4, 5, 333, 400, 467, 700], 333 ],
+         ]
+  stdout: [5, -1, 2]
+  weight: 2
+  hints: ['', '', '']
+
+"Ex2 - Função Verifica Ordenação":
+  command: "./dll/ex2.so"
+  function: c_int verifica_ordenacao *c_int
+  stdin: [
+    [ [1,2,3,4,5,6]],
+    [ [1,2,3,7,5,6]],
+    [ [4, 5, 333, 400, 467, 700]],
+         ]
+  stdout: [1, 0, 1]
+  weight: 2
+  hints: ['', '', '']
+
+"Ex2 - Conjunto da Obra":
+  command: "./bin/ex2.out"
+  stdin: [
+    ["1 2 3 4 5 6", "7 8 9 10 11 12", "13 14 15 16 17 18", "17"],
+    ["22 33 44 55 66 77", "11 33 55 01 27 137", "13 14 15 16 17 18", "1"],
+    ["22 33 44 55 66 77", "11 33 55 01 27 137", "13 14 15 16 17 18", "200"],
+         ]
+  prompts: ["(.*):", "(.*):", "(.*):", "(.*):"]
+  stdout: [
+    'Chave 17 encontrada em [2, 4].',
+    'Chave 1 encontrada em [1, 3].',
+    'Chave 200 não foi encontrada.',
+          ]
+  weight: 2
+  hints: ['', '', '']
