@@ -1,0 +1,46 @@
+"Leitura de estrutura pokemon":
+  command: "./tests/test_pokemon.out"
+  stdin: [None]
+  stdout: ["Teste (0 HP, 0 AT, 0 DEF, 0 SP)"]
+  prompts: []
+  weight: 1
+  hints: ['', '', '']
+
+"Criacao e adicao de elementos na fila":
+  command: "./tests/test_fila.out"
+  stdin: [None]
+  stdout: ["Frente -> Teste (0 HP, 0 AT, 0 DEF, 0 SP)"]
+  prompts: []
+  weight: 1
+  hints: ['', '', '']
+
+"Remocao de itens da fila":
+  command: "./tests/test_remove.out"
+  stdin: [None]
+  stdout: ["Teste (0 HP, 0 AT, 0 DEF, 0 SP)Frente -> Teste (0 HP, 0 AT, 0 DEF, 0 SP)"]
+  prompts: []
+  weight: 1
+  hints: ['', '', '']
+
+"Leitura da pokedex":
+  command: "./tests/test_pokedex.out"
+  stdin: [None]
+  stdout: ["Frente -> Bulbasaur (45 HP, 49 AT, 49 DEF, 45 SP)          Ivysaur (60 HP, 62 AT, 63 DEF, 60 SP)"]
+  prompts: []
+  weight: 1
+  hints: ['', '', '']
+
+"Programa completo":
+  command: "./bin/pokedex.out"
+  stdin: [["Bulbasaur"], ["Moltres"], ["Ahmad"]]
+  stdout: [
+    "Bulbasaur (45 HP, 49 AT, 49 DEF, 45 SP)",
+    "Moltres (90 HP, 100 AT, 90 DEF, 90 SP)",
+    "não foi"
+  ]
+  prompts: ["(.*):"]
+  weight: 2
+  hints: ['', '', '']
+
+
+
