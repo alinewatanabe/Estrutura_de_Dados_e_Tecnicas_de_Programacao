@@ -1,0 +1,82 @@
+"Exercício 1":
+  command: "./bin/ex1.out"
+  stdin: [["Rodrigo Nicola\nPraça Mauá, 1\n31"]]
+  stdout: ["Pessoa{'Rodrigo Nicola',31,'Praça Mauá, 1'}"]
+  prompts: ["(.*):"]
+  weight: 1
+  hints: ['', '', '']
+
+"Exercício 2":
+  command: "./bin/ex2.out"
+  stdin: [
+    ["Rodrigo\nAqui\n31\ns\nAlexandre\nAli\n34\nn\nAlexandre"],
+    ["Rodrigo\nAqui\n31\ns\nAlexandre\nAli\n34\nn\nAhmad"]
+  ]
+  stdout: ["Alexandre: Ali", "não foi"]
+  prompts: ["(.*):"]
+  weight: 1
+  hints: ['', '', '']
+
+"Exercício 3":
+  command: "./bin/ex3.out"
+  stdin: [
+    ["Diego\nAqui\n30\ns\nTawfik\nAli\n18\ns\nAlexandre\nOutro\n34\nn"],
+  ]
+  stdout: [
+            "[Pessoa{'Alexandre',34,'Outro'},Pessoa{'Diego',30,'Aqui'},Pessoa{'Tawfik',18,'Ali'}]",
+  ]
+  prompts: ["(.*):"]
+  weight: 1
+  hints: ['', '', '']
+
+"Exercício 4":
+  command: "./bin/ex4.out"
+  stdin: [
+    ["Diego\nAqui\n30\ns\nTawfik\nAli\n18\ns\nAlexandre\nOutro\n34\nn"],
+  ]
+  stdout: [
+            "[Pessoa{'Tawfik',18,'Ali'},Pessoa{'Diego',30,'Aqui'},Pessoa{'Alexandre',34,'Outro'}]",
+          ]
+  prompts: ["(.*):"]
+  weight: 1
+  hints: ['', '', '']
+
+"Exercício 5":
+  command: "./bin/ex5.out"
+  stdin: [
+    ["0,1\n0,0"],
+    ["5,7\n10,3"],
+  ]
+  stdout: [
+    "1.00",
+    "6.40",
+          ]
+  prompts: ["(.*):"]
+  weight: 1
+  hints: ['', '', '']
+
+"Exercício 6":
+  command: "./bin/ex6.out"
+  stdin: [
+    ["0,0\n4,4\n2,1"],
+    ["0,0\n3,4\n5,7"],
+  ]
+  stdout: [
+    "faz parte",
+    "não pertence",
+          ]
+  prompts: ["(.*):"]
+  weight: 1
+  hints: ['', '', '']
+
+"Exercício 7":
+  command: "./bin/ex7.out"
+  stdin: [
+    ["0,0,2,2\n0,0,1,1\n0,0,3,3\n0,0,1.5,1.5"],
+  ]
+  stdout: [
+    "[Ret{Ponto{0.00, 0.00},Ponto{1.00, 1.00}},Ret{Ponto{0.00, 0.00},Ponto{1.50, 1.50}},Ret{Ponto{0.00, 0.00},Ponto{2.00, 2.00}},Ret{Ponto{0.00, 0.00},Ponto{3.00, 3.00}}]",
+          ]
+  prompts: ["(.*):"]
+  weight: 1
+  hints: ['', '', '']
